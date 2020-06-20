@@ -33,7 +33,22 @@ class ZT
 
 	public function _cli_interface()
 	{
+		$this->console("Running ZeroTwo\n", 1);
 
+		tools:
+		$tools = readline("Select :\n 1). Valid Twillio\n 2). Check Balance Twillio\n\n -> ");
+
+		switch ($tools) {
+			case '1':
+				$this->validate_sid();
+			break;
+			case '2':
+				$this->validate_sid();
+			break;
+			default:
+			goto tools;	
+			break;
+		}
 	}
 
 	private function registerAction($action)
