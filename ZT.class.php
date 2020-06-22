@@ -17,7 +17,7 @@ class ZT
 	 / /__/  __/ /  / /_/ / /  | |/ |/ / /_/ /
 	/____/\___/_/   \____/_/   |__/|__/\____/ 
                                       
-	    --- \033[1;33m Twilio Sender\033[0m ---
+	    --- \033[1;33m Twilio Tools\033[0m ---
 	    -- \033[1;31m Coded By ZakirDotID\033[0m --\n\n";		
 	}
 
@@ -65,6 +65,9 @@ class ZT
 				break;	
 			case '--balance':
 				$this->balance_check();
+				break;	
+			case '--send':
+				$this->console("Preium Only!", 3);
 				break;	
 			default:
 				$this->_show__help();
